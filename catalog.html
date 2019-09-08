@@ -7,7 +7,9 @@
   <body>
 <header>
   <section>
+    <a href="index.htlm">
       <img src="https://via.placeholder.com/150x100" alt="Логотип магазина Техномарт">
+      </a>
     <form class="search">
     <input type="search" name="search">
     </form>
@@ -23,11 +25,11 @@
       <span>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</span>
     </div>
     <ul>
-      <li><a href="">Войти</a></li>
-      <li><a href="">Регистрация</a></li>
+      <li class="user-name"><a href="#">Равшан Джамшутович</a></li>
+      <li class="orders"><a href="#">Мои заказы</a></li>
+      <li class="profile"><a href="#">Личный кабинет</a></li>
     </ul>
     <nav>
-      <!--"не хватает отступа у списка", не поняла-->
     <ul>
       <li>Главная</li>
       <li><a href="company.html">Компания</a></li>
@@ -40,34 +42,64 @@
   </nav>
 </header>
 <main>
-  <h1>Интернет-магазин Техномарт</h1>
-  <!--Здесь отмечено красным, велено не делать пока!-->
-  <section>
-    <h2>Компания "Техномарт"</h2>
-    <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
-    и строительства не оставит равнодушными любителей сэкономить на гастробайтерах.</p>
-    <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-    Техномарт работает со многими транспортными компаниями:</p>
-    <ul>
-      <li>Деловые линии</li>
-      <li>Автотрейдинг</li>
-      <li>ЖелДорЭкспедиция</li>
-    </ul>
-    <a href="company.html">Подробнее о компании</a>
-  </section>
-  <section>
-    <h2>Контакты</h2>
-    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-    <a href="map.html" class="map"><img src="https://via.placeholder.com/150x150" alt="Как проехать"></a>
-    <!--"эта ссылка будет открывать попап с картой" а как ее сейчас пометить?-->
-    <a href="contacts.html">Заблудились? Напишите нам!</a>
-    <!--" это попап с формой" а как ее сейчас пометить?-->
-  </section>
+  <h1>Каталог</h1>
+  <h2>Перфораторы</h2>
+  <!-- Тут будет фильтр -->
+<!-- Тут будет сортировка -->
+<section>
+<h3>Производители</h3>
+<label for="">
+  <input type="radio" name="" value="" checked>BOSCH
+</label><br>
+<label for="">
+  <input type="radio" name="" value="">ИНТЕРСКОЛ
+</label><br>
+<label for="">
+  <input type="radio" name="" value="" checked>MAKITA
+</label><br>
+<label for="">
+  <input type="radio" name="" value="">DEWALT
+</label><br>
+<label for="">
+  <input type="radio" name="" value="">HITACHI
+</label>
+</section>
+
+<section>
+<h3>Питание</h3>
+<label for="">
+  <input type="radio" name="" value="" checked>АККУМУЛЯТОРНЫЕ
+</label><br>
+<label for="">
+  <input type="radio" name="" value="">СЕТЕВЫЕ
+</label>
+</section>
+
+<section>
+<table class="catalog">
+  <tr>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 3000">BOSCH BFG 3000</a></td>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 6000">BOSCH BFG 6000</a></td>
+    <td class="new-product"><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 2000">BOSCH BFG 2000</a></td>
+  </tr>
+  <tr>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 3000" class="perforator">BOSCH BFG 3000</a></td>
+    <td class="new-product"><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 6000" class="perforator">BOSCH BFG 6000</a></td>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 2000">BOSCH BFG 2000</a></td>
+  </tr>
+  <tr>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 3000">BOSCH BFG 3000</a></td>
+    <td><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 6000">BOSCH BFG 6000</a></td>
+    <td class="new-product"><a href="#"><img src="#" alt="Перфоратор BOSCH BFG 2000">BOSCH BFG 2000</a></td>
+  </tr>
+</table>
+</section>
 </main>
 <footer>
   <section>
+    <a href="index.html">
       <img src="https://via.placeholder.com/150x100" alt="Логотип магазина Техномарт">
-      <!-- тут, получается, тоже ссылку убрать с логотипа? -->
+      </a>
     <p>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</p>
       <a href="">+7 (082) 555-05-55</a>
   </section>
