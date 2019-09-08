@@ -7,28 +7,29 @@
   <body>
 <header>
   <section>
-    <a href="">
       <img src="https://via.placeholder.com/150x100" alt="Логотип магазина Техномарт">
-    </a>
+    <form class="search">
     <input type="search" name="search">
+    </form>
     <ul>
       <li><a href="#">Закладки</li></a>
       <li><a href="#">Корзина</li></a>
       <li><a href="#">Оформить заказ</li></a>
     </ul>
     </section>
-    <div>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <div>
       <a href="#">+7 (082) 555-05-55</a>
       <span>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</span>
     </div>
     <ul>
-      <li><button type="button">Войти</button></li>
-      <li><button type="button">Регистрация</button></li>
+      <li><a href="">Войти</a></li>
+      <li><a href="">Регистрация</a></li>
     </ul>
     <nav>
+      <!--"не хватает отступа у списка", не поняла-->
     <ul>
-      <li><a href="index.html">Главная</a></li>
+      <li>Главная</li>
       <li><a href="company.html">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="news.html">Новости</a></li>
@@ -57,19 +58,19 @@
   <section>
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-    <a href="map.html"><img src="https://via.placeholder.com/150x150" alt="Как проехать"></a><br>
+    <a href="map.html" class="map"><img src="https://via.placeholder.com/150x150" alt="Как проехать"></a>
+    <!--"эта ссылка будет открывать попап с картой" а как ее сейчас пометить?-->
     <a href="contacts.html">Заблудились? Напишите нам!</a>
+    <!--" это попап с формой" а как ее сейчас пометить?-->
   </section>
 </main>
   </body>
   <footer>
     <section>
-      <a href="">
         <img src="https://via.placeholder.com/150x100" alt="Логотип магазина Техномарт">
-      </a>
-      <p>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8 <br>
-        +7 (082) 555-05-55
-      </p>
+        <!-- тут, получается, тоже ссылку убрать с логотипа? -->
+      <p>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="">+7 (082) 555-05-55</a>
     </section>
     <section>
       <ul>
@@ -93,8 +94,12 @@
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Инстаграм</a></li>
       </ul>
-      <p>Обратная связь: mail@htmlacademy.ru</p>
-      <p>Разработано: htmlacademy.ru</p>
+      <div class="">
+      Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="">
+      Разработано: <a href="https://htmlacademy.ru/"> htmlacademy.ru </a>
+        </div>
     </section>
   </footer>
 </html>
