@@ -41,43 +41,66 @@
 </header>
 <main>
   <h1>Интернет-магазин Техномарт</h1>
+  <h2 class="hide"></h2>
 
 <section>
   <div class="">
     <div class="">
-      <h2>Материалы</h2>
+      <h3>Материалы</h3>
       <a href="#">На любой вкус</a>
-      <img src="img/icon-1.svg" width="44" height="65" alt="">
     </div>
     <div class="">
-      <h2>Инструмент</h2>
+      <h3>Инструмент</h3>
       <a href="#">На все случаи</a>
-      <img src="img/icon-2.svg" width="75" height="61" alt="">
     </div>
     <div class="">
-      <h2>Техника</h2>
+      <h3>Техника</h3>
       <a href="#">Для стройки</a>
-      <img src="img/icon-3.svg" width="78" height="62" alt="">
     </div>
   </div>
-  <div class=""> <!--слайдер-->
-      <div class="">
-        <img src="img/slider_1.jpg" width="620" height="266" alt="">
-        <img src="img/slider_2.jpg" width="620" height="266" alt="">
-        <a href="#">Открыть каталог</a>
-        <img src="img/icon-left.svg" width="22" height="40" alt="">
-        <img src="img/icon-right.svg" width="22" height="40" alt="">
+
+  <div class="slider">
+      <div class="slider-wrap">
+        <ul>
+          <li>
+          <div class="slide">
+            <div class="slide-top">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </div>
+            <a href="">Открыть каталог</a>
+          </div>
+          </li>
+          <li>
+          <div class="slide">
+            <div class="slide-top">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+            </div>
+            <a href="">Открыть каталог</a>
+          </div>
+          </li>
+      </div>
+      </ul>
+
+      <div class="slider-pagination">
+        <button type="button">Индикатор 1</button>
+        <button type="button">Индикатор 2</button>
+      </div>
+
+      <div class="slider-control">
+        <button class="control-btn control-btn-previous" type="button">Влево</button>
+        <button class="control-btn control-btn-next" type="button">Вправо</button>
+      </div>
     </div>
 
     <div class="">
-      <h2>Скидки 50%</h2>
+      <h3>Скидки 50%</h3>
       <a href="#">На 350 Товаров</a>
-      <img src="img/icon-4.svg" width="59" height="72" alt="">
     </div>
     <div class="">
-      <h2>Доставка</h2>
+      <h3>Доставка</h3>
       <a href="#">Бесплатно</a>
-      <img src="img/icon-3.svg" width="78" height="63" alt="">
     </div>
   </div>
 </section>
@@ -139,20 +162,35 @@
   <h2>Сервисы</h2>
   <p>Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-<div class="">
-  <input type="radio" name="services" value="delivery" checked>
-  <span class="">Доставка</span>
-  <h3>Доставка</h3> <!--Это тут оставлять, или отдельно после радиобаттонов?-->
-  <p>Мы с удовольствием доставим ваш товар прямо
-  к вашему подъезду совершенно бесплатно!
-  Ведь мы неплохо заработаем,
-  поднимая его на ваш этаж!</p>
-  <a href="#"><img src="img/delivery_car.png" width="468" height="261" alt=""></a>
-  <input type="radio" name="services" value="warranty">
-  <span class="">Гарантия</span>
-  <input type="radio" name="services" value="credit">
-  <span class="">Кредит</span>
-</div>
+<div class="tabs">
+      <div class="tabs-control">
+        <button>Доставка</button>
+        <button>Гарантия</button>
+        <button>Кредит</button>
+      </div>
+
+      <div class="tabs-content">
+            <div class="tab">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно!Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!</p>
+            </div>
+
+            <div class="tab">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также
+                в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+
+            <div class="tab">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </div>
+          </div>
+        </div>
 </section>
 
   <section>
