@@ -43,14 +43,43 @@
   <h1>Интернет-магазин Техномарт</h1>
 
 <section>
-  <ul>
-    <li>Материалы</li>
-    <li>Инструмент</li>
-    <li>Техника</li>
-    <li>Дрели</li>
-    <li>Скидки</li>
-    <li>Доставка</li>
-  </ul>
+  <div class="">
+    <div class="">
+      <h2>Материалы</h2>
+      <a href="#">На любой вкус</a>
+      <img src="img/icon-1.svg" width="44" height="65" alt="">
+    </div>
+    <div class="">
+      <h2>Инструмент</h2>
+      <a href="#">На все случаи</a>
+      <img src="img/icon-2.svg" width="75" height="61" alt="">
+    </div>
+    <div class="">
+      <h2>Техника</h2>
+      <a href="#">Для стройки</a>
+      <img src="img/icon-3.svg" width="78" height="62" alt="">
+    </div>
+  </div>
+  <div class=""> <!--слайдер-->
+      <div class="">
+        <img src="img/slider_1.jpg" width="620" height="266" alt="">
+        <img src="img/slider_2.jpg" width="620" height="266" alt="">
+        <a href="#">Открыть каталог</a>
+        <img src="img/icon-left.svg" width="22" height="40" alt="">
+        <img src="img/icon-right.svg" width="22" height="40" alt="">
+    </div>
+
+    <div class="">
+      <h2>Скидки 50%</h2>
+      <a href="#">На 350 Товаров</a>
+      <img src="img/icon-4.svg" width="59" height="72" alt="">
+    </div>
+    <div class="">
+      <h2>Доставка</h2>
+      <a href="#">Бесплатно</a>
+      <img src="img/icon-3.svg" width="78" height="63" alt="">
+    </div>
+  </div>
 </section>
 
 <section>
@@ -110,19 +139,21 @@
   <h2>Сервисы</h2>
   <p>Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-<ul>
-  <li><a href="#">Доставка</a></li>
-  <li><a href="#">Гарантия</a></li>
-  <li><a href="#">Кредит</a></li>
-</ul>
-<h3>Доставка</h3>
-<p>Мы с удовольствием доставим ваш товар прямо
-к вашему подъезду совершенно бесплатно!
-Ведь мы неплохо заработаем,
-поднимая его на ваш этаж!</p>
-<a href="#"><img src="img/delivery_car.png" width="468" height="261" alt=""></a>
+<div class="">
+  <input type="radio" name="services" value="delivery" checked>
+  <span class="">Доставка</span>
+  <h3>Доставка</h3> <!--Это тут оставлять, или отдельно после радиобаттонов?-->
+  <p>Мы с удовольствием доставим ваш товар прямо
+  к вашему подъезду совершенно бесплатно!
+  Ведь мы неплохо заработаем,
+  поднимая его на ваш этаж!</p>
+  <a href="#"><img src="img/delivery_car.png" width="468" height="261" alt=""></a>
+  <input type="radio" name="services" value="warranty">
+  <span class="">Гарантия</span>
+  <input type="radio" name="services" value="credit">
+  <span class="">Кредит</span>
+</div>
 </section>
-
 
   <section>
     <h2>Компания "Техномарт"</h2>
@@ -173,7 +204,7 @@
     </ul>
   </section>
   <section>
-    <p>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
+    <p><span>&#169;</span>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
     <ul>
       <li><a href="#">Вконтакте</a></li>
       <li><a href="#">Фейсбук</a></li>
