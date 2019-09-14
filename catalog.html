@@ -43,14 +43,35 @@
 </header>
 <main>
   <h1>Каталог</h1>
+
+  <h2>ПЕРФОРАТОРЫ</h2>
+
   <ul class="breadcrumb-catalog">
     <li class="breadcrumb-item-home-icon"><a href="#"><img src="#"></a></li>
     <li class="breadcrumb-item"><a href="#">Каталог</a></li>
     <li class="breadcrumb-item"><a href="#">Инструмент</a></li>
     <li class="breadcrumb-item"><span class="">Перфораторы</span></li>
   </ul>
-  <!-- Тут будет фильтр -->
-<!-- Тут будет сортировка -->
+
+<section>
+  <h3>Фильтр</h3>
+  <fieldset>
+    <legend>Цена</legend>
+    <div><button tabindex="0"></button></div>
+    <div><button tabindex="0"></button></div>
+    <div class="filter-line"></div>
+    <input type="number" name="price-range" value="0">
+    <input type="number" name="price-range" value="30000">
+  </fieldset>
+</section>
+
+<section>
+  <h2 class="sorting">Сортировка</h2>
+  <li><a href="">По цене</a></li>
+  <li><a href="">По типу</a></li>
+  <li><a href="">По функционалу</a></li>
+</section>
+
 <section>
   <form class="#" action="#">
     <fieldset>
@@ -172,7 +193,7 @@
 </ul>
 </section>
 
-<section>
+<section class="pagination">
   <a href="#">1</a>
   <a href="#">2</a>
   <a href="#">3</a>
