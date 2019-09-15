@@ -23,8 +23,31 @@
       <span>г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</span>
     </div>
     <ul>
-      <li><a href="">Войти</a></li>
-      <li><a href="">Регистрация</a></li>
+      <li><a href="login.html">Войти</a></li>
+
+      <div class="visually-hidden">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form class="login" action="#" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="*************">
+        </p>
+        <p>
+          <input id="login-password-info" type="checkbox" name="remember">
+          <label for="login-password-info">Запомните меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button>
+      </div>
+
+      <li><a href="sign-in.html">Регистрация</a></li>
     </ul>
     <nav>
 
@@ -212,7 +235,22 @@
     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
     <a href="#" class="map"><img src="img/map.jpg" width="300" height="158" alt="Как проехать"></a>
     <a href="#">Заблудились? Напишите нам!</a>
-    <!--" это попап с формой" а как ее сейчас пометить?-->
+
+    <div class="visually-hidden">
+    <a href="#" class="big-map"><img src="img/big_map.jpg" width="940" height="447" alt="Офис компании по адресу
+      ул. Б. Конюшенная, д. 19/8, Санкт-Перетбург"></a>
+    <button type="button" area-label="Закрыть">X</button>
+    <form class="write-us" action="#" method="post">
+      <label for="your-name">Ваше имя:</label>
+      <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
+      <label for="your-email">Ваш e-mail:</label>
+      <input id="your-email" type="text" name="email" placeholder="email@example.com">
+      <p>Текст письма:</p>
+      <textarea id="message" name="your-message" rows="8" cols="80">В свободной форме</textarea>
+      <button type="submit">Отправить</button>
+      <button type="button" area-label="Закрыть">X</button>
+    </form>
+    </div>
   </section>
 </main>
 
@@ -244,9 +282,9 @@
   <section>
     <p><span>&#169;</span>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#" aria-label="Техномарт во ВКонтакте">Вконтакте</a></li>
+      <li><a href="#" aria-label="Техномарт в Фэйсбуке">Фейсбук</a></li>
+      <li><a href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a></li>
     </ul>
     <div class="feedback">
     Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
