@@ -57,11 +57,17 @@
   <h3>Фильтр</h3>
   <fieldset>
     <legend>Цена</legend>
-    <div><button tabindex="0"></button></div>
-    <div><button tabindex="0"></button></div>
-    <div class="filter-line"></div>
-    <input type="number" name="price-range" value="0">
-    <input type="number" name="price-range" value="30000">
+    <div class="filter">
+    <button tabindex="0"></button>
+    <button tabindex="0"></button>
+    <div class="filter-line">
+    </div>
+    </div>
+    <div class="price-choice">
+    <input type="number" name="price-range" value="0" min="0">
+    <span>-</span>
+    <input type="number" name="price-range" value="30000" max="30000">
+    </div>
   </fieldset>
 </section>
 
@@ -70,6 +76,8 @@
   <li><a href="">По цене</a></li>
   <li><a href="">По типу</a></li>
   <li><a href="">По функционалу</a></li>
+  <li class="ascending"><a href=""></a></li>
+  <li class="descending"><a href=""></a></li>
 </section>
 
 <section>
@@ -253,5 +261,10 @@
       </div>
   </section>
 </footer>
+<div class="visually-hidden added-to-cart">
+  <h3>Товар добавлен в корзину!</h3>
+  <a href="#">Оформить заказ</a>
+  <a href="#">Продолжить покупки</a>
+</div>
   </body>
 </html>
