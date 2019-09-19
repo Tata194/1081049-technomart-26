@@ -1,11 +1,275 @@
+/* cuprum-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cuprum-italic - cyrillic_latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprum-v11-cyrillic_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cuprum-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprum-v11-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-regular - cyrillic_latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   background-color: #ffffff;
 }
 
-a {
-  text-decoration: none;
+.main-header {
+  background-color: #f3f7f9;
+}
+
+.header-top {
+  background-color: #32425c;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.main-nav {
+  background-color: #32425c;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.store-items {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.store-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.materials {
+  width: 300px;
+  height: 123px;
+  background-color: #ffbf47;
+}
+
+.tools {
+  width: 300px;
+  height: 123px;
+  background-color: #3bbce3;
+}
+
+.technics {
+  width: 300px;
+  height: 123px;
+  background-color: #dc91d8;
+}
+
+.store-offers {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.discount {
+  width: 300px;
+  height: 123px;
+  background-color: #8ed78f;
+}
+
+.delivery {
+  width: 300px;
+  height: 123px;
+  background-color: #ffc047;
+}
+
+.popular-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.all-popular {
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+ul.popular-list {
+  list-style: none;
+}
+
+.popular-list li {
+  display: inline-block;
+}
+
+.card {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.old-price {
+  color: #a9a9a9;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.new-price {
+  width: 141px;
+  height: 38px;
+  background-color: #ee3643;
+  font-family: "PT Sans";
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.brand-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: color: #32425c;
+}
+
+.all-brands {
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+ul.brand-list {
+  list-style: none;
+}
+
+.brand-list li {
+  display: inline-block;
+}
+
+.about-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+.shipping-company {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.company-details {
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contacts-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.contact-us {
+  width: 300px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
