@@ -60,6 +60,12 @@ body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   background-color: #ffffff;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-header {
@@ -76,10 +82,126 @@ body {
   background-color: #ee3643;
 }
 
+.user-order-menu li {
+display: inline-block;
+}
+
+.menu-buy {
+  background-color: #63a63e;
+}
+
+.menu-bookmark a:hover,
+.menu-cart a:hover,
+.menu-bookmark a:focus,
+.menu-cart a:focus {
+  background-color: #212a3a;
+}
+
+.menu-buy a:hover,
+.menu-buy a:focus {
+  background-color: #5fbb2d;
+}
+
+.menu-bookmark a:active,
+.menu-cart a:active {
+  background-color: #161d29;
+}
+
+.menu-buy a:active {
+  background-color: #161d29;
+}
+
+.header-text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: calc(23 / 16);
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: calc(21 / 21);
+  color: #ee3643;
+}
+
+.header-address {
+  color: #32425c;
+  line-height: calc(24 / 14);
+}
+
+.user-navigation li {
+  list-style: none;
+}
+
+.login-link,
+.sign-up-link {
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: calc(21 / 21);
+  color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: #c5c5c5;
+}
+
 .main-nav {
   background-color: #32425c;
   font-size: 17px;
   line-height: calc(17 / 17);
+}
+
+.main-nav-list {
+  font-size: 17px;
+  line-height: calc(17 / 17);
+}
+
+.main-nav-list li {
+  display: inline-block;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus {
+  background-color: #293449;
+}
+
+.main-nav-list a:active {
+  background-color: #1d2739;
+}
+
+.main-nav-list a:active {
+  color: #c5c5c5;
+}
+
+.materials a:hover,
+.tools a:hover,
+.technics a:hover,
+.discount a:hover,
+.delivery a:hover,
+.materials a:focus,
+.tools a:focus,
+.technics a:focus,
+.discount a:focus,
+.delivery a:focus {
+  background-color: #000000;
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+.materials a:active,
+.tools a:active,
+.technics a:active,
+.discount a:active,
+.delivery a:active {
+  background-color: #000000;
+  opacity: 0.3;
+  color: #ffffff;
 }
 
 .store-items {
@@ -127,6 +249,21 @@ body {
   background-color: #ffc047;
 }
 
+.slide-link {
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.slide-link:hover,
+.slide-link:focus {
+  background-color: #ca2c37;
+}
+
+.slide-link:active {
+  background-color: #ba2732;
+}
+
+
 .popular-title {
   font-size: 30px;
   line-height: calc(30 / 30);
@@ -139,6 +276,18 @@ body {
   color: #ffffff;
   line-height: calc(18 / 14);
   text-transform: uppercase;
+}
+
+.all-popular:hover,
+.all-brands:hover,
+.all-popular:focus,
+.all-brands:focus {
+  background-color: #ca2c37;
+}
+
+.all-popular:active,
+.all-brands:active {
+  background-color: #ba2732;
 }
 
 ul.popular-list {
@@ -154,6 +303,7 @@ ul.popular-list {
   font-size: 18px;
   font-weight: 700;
   line-height: calc(20 / 18);
+  color: #000000;
 }
 
 .old-price {
@@ -175,6 +325,43 @@ ul.popular-list {
   font-weight: 700;
   line-height: calc(18 / 17);
   text-transform: uppercase;
+}
+
+.buy {
+  background-color: #63a63e;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.buy:hover,
+.buy:focus {
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+  background-color: #518534;
+}
+
+.bookmark {
+  color: #32425c;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 3px solid #63a63e;
+}
+
+.bookmark:hover,
+.bookmark:focus {
+  color: #32425c;
+  border: 3px solid #32425c;
+}
+
+.bookmark:active {
+  color: #32425c;
+  opacity: 0.3;
+  border: 3px solid #32425c;
+  opacity: 0.3;
+
 }
 
 .brand-title {
@@ -228,6 +415,18 @@ ul.brand-list {
   text-transform: uppercase;
 }
 
+.company-details:hover,
+.company-details:focus,
+.contact-us:hover,
+.contact-us:focus {
+  background-color: #ca2c37;
+}
+
+.company-details:active,
+.contact-us:active {
+  background-color: #ba2732;
+}
+
 .contacts-title {
   color: #000000;
   font-size: 30px;
@@ -262,6 +461,23 @@ ul.brand-list {
 
 .footer-navigation li {
   display: inline-block;
+}
+
+.footer-navigation a:hover,
+.footer-deals a:hover,
+.footer-navigation a:focus,
+.footer-deals a:focus {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  color: #f1f5f7;
+  opacity: 0.5;
+}
+
+.footer-deals a:active {
+  color: #ffd180;
+  opacity: 0.5;
 }
 
 .footer-deals {
