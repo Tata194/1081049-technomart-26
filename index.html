@@ -15,8 +15,8 @@
      <input type="search" name="search" placeholder="Поиск:">
     </form>
     <ul class="user-order-menu">
-      <li class="menu-bookmark"><a href="#">Закладки</a></li>
-      <li class="menu-cart"><a href="#">Корзина</a></li>
+      <li class="menu-bookmark top-nav"><a href="#">Закладки</a></li>
+      <li class="menu-cart top-nav"><a href="#">Корзина</a></li>
       <li class="menu-buy"><a href="#">Оформить заказ</a></li>
     </ul>
     </section>
@@ -26,7 +26,7 @@
       <span class="header-address">г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</span>
     </div>
     <ul class="user-navigation">
-      <li><a class="login-link" href="login.html">Войти</a>
+      <li><a class="login-link user-login" href="login.html">Войти</a>
         <!--<div class="visually-hidden">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
@@ -49,7 +49,7 @@
         <button type="button">Закрыть</button>
       </div> -->
       </li>
-      <li><a class="sign-up-link" href="sign-in.html">Регистрация</a></li>
+      <li><a class="sign-up-link user-login" href="sign-in.html">Регистрация</a></li>
     </ul>
 
     <nav class="main-nav">
@@ -70,15 +70,15 @@
 
 <section class="store-sections">
   <div class="store-items">
-    <div class="materials">
+    <div class="materials store">
       <h3>Материалы</h3>
       <a class="store-link" href="#">На любой вкус</a>
     </div>
-    <div class="tools">
+    <div class="tools store">
       <h3>Инструмент</h3>
       <a class="store-link" href="#">На все случаи</a>
     </div>
-    <div class="technics">
+    <div class="technics store">
       <h3>Техника</h3>
       <a class="store-link" href="#">Для стройки</a>
     </div>
@@ -120,11 +120,11 @@
     </div>
 
     <div class="store-offers">
-    <div class="discount">
+    <div class="discount store">
       <h3>Скидки 50%</h3>
       <a class="store-link" href="#">На 350 Товаров</a>
     </div>
-    <div class="delivery">
+    <div class="delivery store">
       <h3>Доставка</h3>
       <a class="store-link" href="#">Бесплатно</a>
     </div>
@@ -133,7 +133,7 @@
 
 <section class="popular-products">
   <h2 class="popular-title">Популярные товары:</h2>
-  <a class="all-popular" href="">Все популярные товары</a>
+  <a class="all-popular popular" href="">Все популярные товары</a>
   <ul class="popular-list">
     <li class="card">
       <div class="popular-item"><img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000"></div>
@@ -171,7 +171,7 @@
 
 <section class="brands">
   <h2 class="brand-title">Популярные производители</h2>
-  <a class="all-brands" href="">Все производители</a>
+  <a class="all-brands popular" href="">Все производители</a>
   <ul class="brand-list">
     <li><a class="bosch" href=""><img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
     <li><a class="makita" href=""><img src="img/makita.png" width="123" height="40" alt="Makita"></a></li>
@@ -230,14 +230,14 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a class="company-details" href="company.html">Подробнее о компании</a>
+    <a class="company-details company" href="company.html">Подробнее о компании</a>
   </section>
 
   <section class="contacts">
     <h2 class="contacts-title">Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
     <a href="#" class="map"><img src="img/map.jpg" width="300" height="158" alt="Как проехать"></a>
-    <a class="contact-us" href="#">Заблудились? Напишите нам!</a>
+    <a class="contact-us company" href="#">Заблудились? Напишите нам!</a>
   </section>
 </main>
 
@@ -251,7 +251,7 @@
       <a href="tel:+70825550555">+7 (082) 555-05-55</a>
     </div>
   </section>
-  <section class="footer-navigation">
+  <section class="footer-navigation footer-menu">
     <ul>
       <li><a href="company.html">Компания</a></li>
       <li><a href="news.html">Новости</a></li>
@@ -259,7 +259,7 @@
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <ul class="footer-deals">
+    <ul class="footer-deals footer-menu">
       <li><a href="materials.html">Материалы</a></li>
       <li><a href="techs.html">Техника</a></li>
       <li><a href="tools.html">Инструмент</a></li>
@@ -269,9 +269,9 @@
   <section class="footer-social">
     <p class="copyright"><span>&#169;</span>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
     <ul class="social-icon">
-      <li><a class="social-vk" href="#" aria-label="Техномарт во ВКонтакте">Вконтакте</a></li>
-      <li><a class="social-fb" href="#" aria-label="Техномарт в Фэйсбуке">Фейсбук</a></li>
-      <li><a class="social-inst" href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a></li>
+      <li><a class="social-vk social" href="#" aria-label="Техномарт во ВКонтакте">Вконтакте</a></li>
+      <li><a class="social-fb social" href="#" aria-label="Техномарт в Фэйсбуке">Фейсбук</a></li>
+      <li><a class="social-inst social" href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a></li>
     </ul>
     <div class="feedback">
     Обратная связь: <a class="feedback-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
