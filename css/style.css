@@ -75,22 +75,49 @@ a {
 }
 
 .header-top {
+  width: auto;
   background-color: #293449;
   font-size: 17px;
   line-height: calc(18 / 17);
+  min-height: 42px;
 }
 
-.header-logo {
+.header-top-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 calc(50% - 470px);
+  background-color: #293449;
+}
+
+.logo {
+  display: block;
+  width: 220px;
+  height: 42px;
   background-color: #ee3643;
 }
 
+.search-form {
+  width: 270px;
+}
+
 .user-order-menu {
-display: flex;
-list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
 }
 
 .menu-buy {
   background-color: #63a63e;
+}
+
+.order-menu-item {
+  display: block;
+  padding: 10px 15px;
 }
 
 .order-menu-item a:hover,
@@ -116,11 +143,30 @@ list-style: none;
   background-color: #518534;
 }
 
+.header-contacts-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 calc(50% - 470px);
+  background-color: #f3f7f8;
+}
+
 .header-text {
+  display: block;
+  width: 196px;
+  min-height: 60px;
   font-size: 16px;
   font-style: italic;
   line-height: calc(23 / 16);
   color: #ee3643;
+  margin-left: 53px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 270px;
+
 }
 
 .header-phone {
@@ -128,6 +174,9 @@ list-style: none;
   font-weight: 400;
   line-height: calc(21 / 21);
   color: #ee3643;
+  border: 3px solid #ffffff;
+  min-height: 45px;
+  text-align: center;
 }
 
 .header-address {
@@ -136,10 +185,18 @@ list-style: none;
 }
 
 .user-navigation {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 0;
   list-style: none;
 }
 
 .user-login {
+  display: block;
   background-color: #ffffff;
   font-size: 21px;
   line-height: calc(21 / 21);
@@ -184,18 +241,21 @@ list-style: none;
 }
 
 .main-nav {
+  display: block;
+  width: 940px;
+  margin: auto;
   background-color: #32425c;
   font-size: 17px;
   line-height: calc(17 / 17);
-}
-
-.main-nav-list {
-  font-size: 17px;
-  line-height: calc(17 / 17);
+  min-height: 60px;
 }
 
 .main-nav-list {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 940px;
+  min-height: 60px;
   list-style: none;
 }
 

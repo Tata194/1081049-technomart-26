@@ -10,7 +10,8 @@
   <body>
 <header class="main-header">
   <section class="header-top">
-      <img class="header-logo" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина Техномарт">
+    <div class="header-top-wrapper">
+      <a class="logo" href=""><img class="header-logo" src="img/logo-technomart.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
     <form class="search-form">
      <input type="search" name="search" placeholder="Поиск:">
     </form>
@@ -19,14 +20,16 @@
       <li class="order-menu-item menu-cart"><a class="cart-icon" href="#">Корзина</a></li>
       <li class="order-menu-item menu-buy"><a class="buy-icon" href="#">Оформить заказ</a></li>
     </ul>
+    </div>
     </section>
+    <section class="header-contacts-wrapper">
       <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <div class="header-contacts">
       <a class="header-phone" href="tel:+70825550555">+7 (082) 555-05-55</a>
       <span class="header-address">г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</span>
     </div>
     <ul class="user-navigation">
-      <li><a class="login-link user-login" href="login.html">Войти</a>
+      <li><a class="user-login login-link" href="login.html">Войти</a>
         <!--<div class="visually-hidden">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
@@ -49,8 +52,9 @@
         <button type="button">Закрыть</button>
       </div> -->
       </li>
-      <li><a class="sign-up-link user-login" href="sign-in.html">Регистрация</a></li>
+      <li><a class="user-login sign-up-link" href="sign-in.html">Регистрация</a></li>
     </ul>
+    </section>
 
     <nav class="main-nav">
     <ul class="main-nav-list">
