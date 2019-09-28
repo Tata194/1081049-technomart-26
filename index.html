@@ -193,38 +193,48 @@
 </section>
 
 <section class="services">
-  <h2>Сервисы</h2>
-  <p>Хороший интернет-магазин отличается от плохого не только ценами!
+  <div class="service-header">
+  <h2 class="sercice-title">Сервисы</h2>
+  <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+</div>
 <div class="tabs">
-      <div class="tabs-control">
-        <button>Доставка</button>
-        <button>Гарантия</button>
-        <button>Кредит</button>
+  <input class="tabs-input btn-1" type="radio" id="btn-1" name="toggle" value="tab-1" checked>
+  <input class="tabs-input btn-2" type="radio" id="btn-2" name="toggle" value="tab-2">
+  <input class="tabs-input btn-3" type="radio" id="btn-3" name="toggle" value="tab-3">
+
+      <div class="tabs-buttons">
+        <label class="tabs-button" for="btn-1" tabindex="0">Доставка</label>
+        <label class="tabs-button" for="btn-2" tabindex="0">Гарантия</label>
+        <label class="tabs-button" for="btn-3" tabindex="0">Кредит</label>
       </div>
 
-      <div class="tabs-content">
-            <div class="tab">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему
+      <div class="tab tab-1">
+         <div class="tabs-top">
+            <h3 class="tabs-title">Доставка</h3>
+            <p class="tabs-text">Мы с удовольствием доставим ваш товар прямо к вашему
                 подъезду совершенно бесплатно!Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
-            </div>
+          </div>
 
-            <div class="tab">
-              <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит, а также
+      <div class="tab tab-2">
+          <div class="tabs-top">
+            <h3 class="tabs-title">Гарантия</h3>
+            <p class="tabs-text">Если купленный у нас товар поломается или заискрит, а также
                 в случае пожара, спровоцированного его возгоранием,
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                 сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </div>
-
-            <div class="tab">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            </div>
           </div>
-        </div>
+      </div>
+
+      <div class="tab tab-3">
+            <div class="tabs-top">
+              <h3 class="tabs-title">Кредит</h3>
+              <p class="tabs-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </div>
+     </div>
+    </div>
+
 </section>
 
   <section class="about">

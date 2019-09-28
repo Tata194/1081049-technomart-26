@@ -516,6 +516,134 @@ ul.brand-list {
   display: inline-block;
 }
 
+/* services */
+
+.services {
+  background-color: #f4f8f9;
+  margin-top: 85px;
+}
+
+.service-header {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.sercice-title {
+  width: 398px;
+  color: #000000;
+  font-size: 30px;
+  line-height: calc(30 / 30);
+  text-transform: uppercase;
+}
+
+.service-text {
+  width: 398px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tabs-buttons {
+  width: 240px;
+  padding: 25px;
+  background-color: #32425c;
+}
+
+.tabs-input {
+  display: none;
+}
+
+.tabs-button {
+  display: block;
+  width: 100%;
+  min-height: 2rem;
+  margin-bottom: 1em;
+  padding: 10px;
+  text-align: left;
+  font-size: 21px;
+  font-family: Cuprum;
+  line-height: calc(30 / 21);
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  word-wrap: break-word;
+  user-select: none;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs-button:hover,
+.tabs-button:focus {
+  background-color: #293449;
+}
+
+.tabs-button:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.tab {
+  display: none;
+  width: 750px;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.tab-1 {
+  background-image: url('../img/delivery_car.png');
+}
+
+.tab-2 {
+  background-image: url('../img/guarantee.png');
+}
+
+.tab-3 {
+  background-image: url('../img/credit.png');
+}
+
+.btn-1:checked ~ .tab-1,
+.btn-2:checked ~ .tab-2,
+.btn-3:checked ~ .tab-3 {
+  display: block;
+}
+
+.tabs-top {
+  padding: 25px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: calc(36 / 36);
+  text-transform: uppercase;
+}
+
+.tabs-text {
+  width: 275px;
+  line-height: calc(36 / 13);
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: #000000;
+  font-size: 13px;
+}
+
 /* about */
 
 .about-title {
