@@ -292,6 +292,11 @@ a {
   color: #c5c5c5;
 }
 
+.main-content {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* store items */
 
 .store a:hover,
@@ -399,6 +404,11 @@ a {
   text-transform: uppercase;
 }
 
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .popular:hover,
 .popular:focus {
   background-color: #ca2c37;
@@ -417,11 +427,13 @@ ul.popular-list {
 }
 
 .card {
+  width: 220px;
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: calc(20 / 18);
   color: #000000;
+  text-align: center;
 }
 
 .old-price {
@@ -850,8 +862,12 @@ ul.brand-list {
 }
 
 .footer-logo {
-  background-color: #ee3643;
+    display: block;
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
 }
+
 
 .footer-navigation li {
   display: inline-block;
@@ -878,6 +894,14 @@ ul.brand-list {
   min-height: 107px;
 }
 
+.footer-top {
+  display: flex;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
 .footer-bottom {
   display: flex;
   width: 960px;
@@ -894,7 +918,6 @@ ul.brand-list {
 }
 
 .social-icon {
-  margin: 0;
   width: 126px;
   min-height: 42px;
 }
