@@ -199,6 +199,17 @@ a {
   list-style: none;
 }
 
+.login-link {
+  width: 121px;
+  padding: 14px 27px 15px 48px;
+  margin-right: 10px;
+}
+
+.sign-up-link {
+  width: 150px;
+  padding: 14px 25px 11px;
+}
+
 .user-login {
   display: block;
   background-color: #ffffff;
@@ -358,8 +369,10 @@ a {
 /* popular */
 
 .popular-catalog {
+  display: flex;
+  align-items: center;
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   min-height: 89px;
@@ -368,7 +381,6 @@ a {
 
 
 .popular-title {
-  display: inline-block;
   padding-left: 30px;
   padding-right: 373px;
   color: #32425c;
@@ -378,7 +390,6 @@ a {
 }
 
 .all-popular {
-  display: inline-block;
   width: 253px;
   background-color: #ee3643;
   color: #ffffff;
@@ -484,7 +495,6 @@ ul.popular-list {
 }
 
 .all-brands {
-  display: inline-block;
   width: 253px;
   background-color: #ee3643;
   color: #ffffff;
@@ -496,6 +506,8 @@ ul.popular-list {
 
 .brand-list {
   display: flex;
+  justify-content: space-between;
+  padding: 0;
   flex-wrap: wrap;
   align-items: center;
   width: 940px;
@@ -553,6 +565,7 @@ ul.brand-list {
 }
 
 .tabs-buttons {
+  align-self: flex-start;
   width: 240px;
   padding: 25px;
   background-color: #32425c;
@@ -599,8 +612,8 @@ ul.brand-list {
   width: 750px;
   min-height: 450px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+
+  background-position: center;
 }
 
 .tab-1 {
@@ -621,9 +634,6 @@ ul.brand-list {
   display: block;
 }
 
-.tabs-top {
-  padding: 25px;
-}
 
 .tabs-title {
   margin-top: 0;
@@ -637,6 +647,7 @@ ul.brand-list {
 
 .tabs-text {
   width: 275px;
+  margin-left: 80px;
   line-height: calc(36 / 13);
   font-family: "PT Sans";
   font-weight: 400;
@@ -645,6 +656,24 @@ ul.brand-list {
 }
 
 /* about */
+
+.about-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.about {
+  width: 519px;
+}
+
+.contacts {
+  width: 300px;
+}
 
 .about-title {
   color: #000000;
@@ -662,6 +691,7 @@ ul.brand-list {
 
 .shipping-company {
   font-size: 18px;
+  color: #000000;
   line-height: calc(20 / 18);
 }
 
