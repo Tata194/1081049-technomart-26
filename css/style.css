@@ -84,6 +84,7 @@ a {
 
 .header-top-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 960px;
   padding-left: 10px;
   padding-right: 10px;
@@ -113,22 +114,38 @@ a {
   list-style: none;
 }
 
+.order-menu-item {
+  width: 150px;
+}
+
 .menu-buy {
   background-color: #63a63e;
 }
 
 .order-menu-link {
-  padding: 10px 15px;
+  display: block;
+  position: relative;
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+.menu-bookmark .bookmark-icon {
+  position: relative;
+  padding-left: 44px;
+}
+
+.bookmark-icon::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
 }
 
 .order-menu-item a:hover,
 .order-menu-item a:focus {
   background-color: #212a3a;
-}
-
-.menu-bookmark {
-  background-image: url("../img/icon-bookmark.svg");
-  background-repeat: no-repeat;
 }
 
 .menu-buy a:hover,
@@ -867,7 +884,6 @@ ul.brand-list {
     height: 42px;
     background-color: #ee3643;
 }
-
 
 .footer-navigation li {
   display: inline-block;
