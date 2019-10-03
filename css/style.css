@@ -855,6 +855,7 @@ ul.brand-list {
 .about-perforators {
   width: 940px;
   margin: 0 auto;
+  padding-bottom: 73px;
 }
 
 .perforator-title {
@@ -871,17 +872,24 @@ ul.brand-list {
   color: #000000;
   font-family: "PT Sans";
   font-size: 13px;
-  padding-bottom: 73px;
 }
 
 /* catalog */
 
 .catalog-main {
   display: flex;
-  justify-content: space-around;
-  width: 960px;
+  width: 940px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.catalog-main-container-1 {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-main-container-2 {
+  width: 700px;
 }
 
 .catalog-name {
