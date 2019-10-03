@@ -353,15 +353,34 @@ a {
 .store-sections {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 960px;
 }
 
 .store-container-1 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  width: 940px;
+}
+
+.store-container-2 {
+  display: flex;
+  justify-content: center;
   width: 640px;
 }
+
+.store-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 266px;
+  margin: 20px auto;
+}
+
+.delivery {
+  margin-top: 20px;
+}
+
 
 .store-offers {
   width: 320px;
@@ -378,10 +397,6 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: calc(30 / 24);
-}
-
-.slider {
-  width: 640px;
 }
 
 
