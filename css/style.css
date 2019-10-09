@@ -393,6 +393,7 @@ a {
   justify-content: space-around;
   width: 640px;
   height: 266px;
+  margin: 20px auto;
 }
 
 .store-container-3 {
@@ -498,8 +499,14 @@ a {
 
 /* Slider */
 
-.slide {
+.slider-wrap {
+  position: relative;
+  width: 620px;
+  height: 266px;
+  overflow: hidden;
+}
 
+.slide {
   width: 620px;
   min-height: 266px;
   background-repeat: no-repeat;
@@ -509,19 +516,51 @@ a {
   background-image: url('../img/slider-1.jpg');
 }
 
+.control-btn-previous,
+.control-btn-next {
+  position: absolute;
+  top: 114px;
+  cursor:pointer;
+}
+
+.control-btn-previous {
+  left: 25px;
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+}
+
+.control-btn-next {
+  right: 25px;
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+}
+
+
 .slide-title {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(36 / 36);
   text-transform: uppercase;
+  padding-top: 27px;
+  padding-left: 24px;
 }
 
 .slide-text {
+  position: relative;
   font-size: 18px;
   line-height: calc(24 / 18);
+  padding-top: 8px;
+  padding-left: 25px;
+}
+
+.slide-open {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 22px;
 }
 
 .slide-link {
+  width: 195px;
   padding: 14px 45px;
   background-color: #ee3643;
   text-transform: uppercase;
@@ -535,6 +574,7 @@ a {
 .slide-link:active {
   background-color: #ba2732;
 }
+
 
 /* popular */
 
