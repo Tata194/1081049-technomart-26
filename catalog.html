@@ -16,9 +16,9 @@
          <input type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="user-order-menu">
-          <li class="order-menu-item menu-bookmark"><a class="order-menu-link bookmark-icon" href="#">Закладки: 0</a></li>
-          <li class="order-menu-item menu-cart"><a class="order-menu-link cart-icon" href="#">Корзина: 0</a></li>
-          <li class="order-menu-item menu-buy"><a class=" order-menu-link buy-icon" href="#">Оформить заказ</a></li>
+          <li class="order-menu-item menu-bookmark"><a class="order-menu-link user-order-icon bookmark-icon" href="#">Закладки: 0</a></li>
+          <li class="order-menu-item menu-cart-current"><a class="order-menu-link user-order-icon cart-icon" href="#">Корзина: 10</a></li>
+          <li class="order-menu-item menu-buy"><a class="order-menu-link buy-icon" href="#">Оформить заказ</a></li>
         </ul>
         </div>
         </section>
@@ -28,11 +28,14 @@
           <a class="header-phone" href="tel:+70825550555">+7 (082) 555-05-55</a>
           <div class="header-address">г. Санкт-Перетбург, ул. Б. Конюшенная, д. 19/8</div>
         </div>
-        <ul class="profile-navigation">
-      <li class="user-name"><a href="#">Равшан Джамшутович</a></li>
-      <li class="user-profile orders"><a class="my-orders" href="#">Мои заказы</a></li>
-      <li class="user-profile profile"><a class="my-profile" href="#">Личный кабинет</a></li>
-    </ul>
+        <div class="profile-navigation">
+          <div class="user-name"><a href="#">Равшан Джамшутович</a></div>
+        <div class="user-profile-container">
+          <div class="user-profile orders"><a class="my-orders" href="#">Мои заказы</a></div>
+          <div class="user-shape-icon"></div>
+          <div class="user-profile profile"><a class="my-profile" href="#">Личный кабинет</a></div>
+        <div>
+        </div>
   </section>
     <nav class="main-nav">
     <ul class="main-nav-list">
@@ -54,7 +57,7 @@
     <li class="breadcrumb-item"><a class="breadcrumb-link icon-home" href="#"></a></li>
     <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Каталог</a></li>
     <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Инструмент</a></li>
-    <li class="breadcrumb-item"><span>Перфораторы</span></li>
+    <li class="breadcrumb-item breadcrumb-item-current"><span>Перфораторы</span></li>
   </ul>
 
   <h2 class="catalog-name">ПЕРФОРАТОРЫ</h2>
@@ -62,55 +65,65 @@
 <div class="catalog-main">
   <div class="catalog-main-container-1">
 <section class="filter">
-  <h3 class="filter-title">Фильтр</h3>
-  <fieldset>
-    <legend>Цена</legend>
-    <div class="filter-price">
-    <button></button>
-    <button></button>
-    <div class="filter-line">
-    </div>
-    </div>
-    <div class="price-choice">
-    <input type="number" name="min-price" value="0" min="0" readonly>
-    <span>-</span>
-    <input type="number" name="max-price" value="30000" max="40000" readonly>
-    </div>
+  <h3 class="filter-title">Фильтр:</h3>
+
+  <fieldset class="filter-item">
+  <form method="get" action="">
+    <legend>Цена:</legend>
+    <div class="range-filter">
+
+      <div class="filter-price">
+      <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+      </div>
+
+          <div class="price-choice">
+          <label class="min-price"><input type="number" name="min-price" value="0" min="0" readonly></label>
+          <span class="price-choice-dash">-</span>
+          <label class="max-price"><input type="number" name="max-price" value="30000" max="40000" readonly></label>
+          </div>
+      </div>
+    </form>
   </fieldset>
+  <div class="filter-separator"></div>
 </section>
 
 <section>
   <form class="catalog-filter" action="#">
     <fieldset>
-    <legend class="filter-name">Перфораторы</legend>
+    <legend class="filter-name">Производители:</legend>
+
     <label class="perforator-checkbox">
-      <input class="filter-input" type="checkbox" name="BOSCH" checked>
+      <input class="visually-hidden filter-input" type="checkbox" name="BOSCH" checked>
       <span class="filter-input-brand">BOSCH</span>
     </label>
 
     <label class="perforator-checkbox">
-      <input class="filter-input" type="checkbox" name="ИНТЕРСКОЛ">
+      <input class="visually-hidden filter-input" type="checkbox" name="ИНТЕРСКОЛ">
       <span class="filter-input-brand">ИНТЕРСКОЛ</span>
     </label>
 
     <label class="perforator-checkbox">
-      <input class="filter-input" type="checkbox" name="MAKITA" checked>
+      <input class="visually-hidden filter-input" type="checkbox" name="MAKITA" checked>
       <span class="filter-input-brand">MAKITA</span>
     </label>
 
     <label class="perforator-checkbox">
-      <input class="filter-input" type="checkbox" name="DEWALT">
+      <input class="visually-hidden filter-input" type="checkbox" name="DEWALT">
       <span class="filter-input-brand">DEWALT</span>
     </label>
 
     <label class="perforator-checkbox">
-      <input class="" type="checkbox" name="HITACHI">
-      <span class="">HITACHI</span>
+      <input class="visually-hidden filter-input" type="checkbox" name="HITACHI">
+      <span class="filter-input-brand">HITACHI</span>
     </label>
     </fieldset>
 
     <fieldset>
-      <legend class="filter-name">Питание</legend>
+      <legend class="filter-name">Питание:</legend>
       <label class="battery-type">
             <input class="filter-input" type="radio" name="battery" value="rechargeable" checked>
             <span class="filter-input-brand">АККУМУЛЯТОРНЫЕ</span>
@@ -128,10 +141,9 @@
 </div>
 
 <div class="catalog-main-container-2">
-<section>
   <div class="catalog-wrapper">
-    <div class="sorting" >
-      <h3 class="sorting-name">Сортировка</h3>
+    <div class="sorting">
+      <h3 class="sorting-name">Сортировка:</h3>
       <ul class="sorting-list">
       <li class="sorting-item sorting-item-current"><a class="sorting-link" href="">По цене</a></li>
       <li class="sorting-item"><a class="sorting-link" href="">По типу</a></li>
@@ -239,7 +251,6 @@
   <a class="pagination-item pagination-next" href="#">Следующая</a>
 </div>
 </div>
-</section>
 </div>
 </div>
 </div>
@@ -270,16 +281,16 @@
   <section class="footer-navigation">
     <ul class="footer-menu">
       <li><a href="company.html">Компания</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li class="footer-menu-item"><a href="news.html">Новости</a></li>
+      <li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
+      <li class="footer-menu-item"><a href="delivery.html">Доставка</a></li>
+      <li class="footer-menu-item"><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="footer-deals">
       <li><a href="materials.html">Материалы</a></li>
-      <li><a href="techs.html">Техника</a></li>
-      <li><a href="tools.html">Инструмент</a></li>
-      <li><a href="specialdeal.html">Спецпредложения</a></li>
+      <li class="footer-deals-item"><a href="techs.html">Техника</a></li>
+      <li class="footer-deals-item"><a href="tools.html">Инструмент</a></li>
+      <li class="footer-deals-item"><a href="specialdeal.html">Спецпредложения</a></li>
     </ul>
   </section>
   </div>
