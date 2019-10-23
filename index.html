@@ -94,37 +94,32 @@
     </div>
     <div class="store-container-2">
       <div class="slider">
+        <input class="slider-input dt-1" id="dt-1" type="radio" name="slider" value="dt-1" checked>
+        <input class="slider-input dt-2" id="dt-2" type="radio" name="slider" value="dt-2">
 
-      <div class="slider-pagination">
-      <input class="dots-input dt-1" type="radio" id="dt-1" name="toggle" value="dot-1" checked>
-      <input class="dots-input dt-2" type="radio" id="dt-2" name="toggle" value="dot-2">
-      </div>
-
-          <div class="slider-wrap">
-
-              <div class="slide slide-1">
-                  <div class="slide-title">Дрели</div>
-                  <div class="slide-text">Соседям на радость!</div>
-                <div class="slide-open"><a class="slide-link" href="">Открыть каталог</a></div>
-              </div>
-
-              <div class="slide slide-2">
-                  <div class="slide-title">Перфораторы</div>
-                  <div class="slide-text">Настоящие мужские игрушки</div>
-                <div class="slide-open"><a class="slide-link" href="catalog.html">Открыть каталог</a></div>
-              </div>
-          </div>
-
-          <div class="dots-buttons">
-            <label class="slider-dots dot-1" for="dt-1" tabindex="0"></label>
-            <label class="slider-dots dot-2" for="dt-2" tabindex="0"></label>
-          </div>
-
-          <div class="slider-control">
-            <div class="control-btn control-btn-previous"></div>
-            <div class="control-btn control-btn-next"></div>
+        <div class="slide slide-01">
+          <div class="slide-wrap">
+            <h3 class="slide-title">Дрели</h3>
+            <p class="slide-text">Соседям на радость!</p>
+            <a href="" class="slide-link">Открыть каталог</a>
           </div>
         </div>
+        <div class="slide slide-02">
+          <div class="slide-wrap">
+            <h3 class="slide-title">Перфораторы</h3>
+            <p class="slide-text">Настоящие мужские игрушки</p>
+            <a href="" class="slide-link">Открыть каталог</a>
+          </div>
+        </div>
+
+        <div class="slider-pagination">
+          <label class="handle handle-1" for="dt-1" tabindex="0"></label>
+          <label class="handle handle-2" for="dt-2" tabindex="0"></label>
+        </div>
+
+        <label class="arrow arrow-prev" for="dt-1" tabindex="0"></label>
+        <label class="arrow arrow-next" for="dt-2" tabindex="0"></label>
+      </div>
     </div>
 
   <div class="store-container-3">
@@ -249,9 +244,9 @@
 <div class="about-contacts">
   <section class="about">
     <h2 class="about-title">Компания "Техномарт"</h2>
-    <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
+    <p class="about-text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
     и строительства не оставит равнодушными любителей сэкономить на гастробайтерах.</p>
-    <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+    <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
     Техномарт работает со многими транспортными компаниями:</p>
     <ul class="shipping-company">
       <li>Деловые линии</li>
@@ -263,7 +258,7 @@
 
   <section class="contacts">
     <h2 class="contacts-title">Контакты</h2>
-    <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+    <p class="about-text-address">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
     <a href="#" class="map"><img src="img/map.jpg" width="300" height="158" alt="Как проехать"></a>
     <a class="contact-us company" href="#">Заблудились? Напишите нам!</a>
   </section>
