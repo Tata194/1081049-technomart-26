@@ -91,9 +91,9 @@
   <div class="filter-separator"></div>
 </section>
 
-<section>
+<section class="filters">
   <form class="catalog-filter" action="#">
-    <fieldset>
+    <!--<fieldset>
     <legend class="filter-name">Производители:</legend>
 
     <label class="perforator-checkbox">
@@ -120,9 +120,51 @@
       <input class="visually-hidden filter-input" type="checkbox" name="HITACHI">
       <span class="filter-input-brand">HITACHI</span>
     </label>
-    </fieldset>
+  </fieldset>-->
 
-    <fieldset>
+  <fieldset>
+  <legend class="filter-name">Производители:</legend>
+
+  <ul>
+  <li class="filter-option">
+  <label class="perforator-checkbox">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" checked>
+    <span class="filter-input-brand">BOSCH</span>
+  </label>
+  </li>
+
+  <li class="filter-option">
+  <label class="perforator-checkbox">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ИНТЕРСКОЛ">
+    <span class="filter-input-brand">ИНТЕРСКОЛ</span>
+  </label>
+  </li>
+
+  <li class="filter-option">
+  <label class="perforator-checkbox">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" checked>
+    <span class="filter-input-brand">MAKITA</span>
+  </label>
+  </li>
+
+  <li class="filter-option">
+  <label class="perforator-checkbox">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="DEWALT">
+    <span class="filter-input-brand">DEWALT</span>
+  </label>
+  </li>
+
+  <li class="filter-option">
+  <label class="perforator-checkbox">
+    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI">
+    <span class="filter-input-brand">HITACHI</span>
+  </label>
+  </li>
+
+  </ul>
+  </fieldset>
+
+    <!--<fieldset>
       <legend class="filter-name">Питание:</legend>
       <label class="battery-type">
             <input class="filter-input" type="radio" name="battery" value="rechargeable" checked>
@@ -132,6 +174,24 @@
                 <input class="filter-input" type="radio" name="battery" value="power">
                 <span class="filter-input-brand">СЕТЕВЫЕ</span>
               </label>
+    </fieldset>-->
+    <fieldset>
+      <legend class="filter-name">Питание:</legend>
+      <ul>
+      <li class="filter-option">
+      <label class="battery-type">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" value="rechargeable" checked>
+            <span class="filter-input-brand">АККУМУЛЯТОРНЫЕ</span>
+          </label>
+          </li>
+
+          <li class="filter-option">
+          <label class="field-radio">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" value="power">
+                <span class="filter-input-brand">СЕТЕВЫЕ</span>
+              </label>
+              </li>
+              </ul>
     </fieldset>
 
 <button class="filter-button" type="submit">Показать</button>
@@ -179,7 +239,7 @@
     <div class="flag flag-new">новинка</div>
     <div class="image"><img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></div>
     <div class="card-title">Перфоратор BOSCH BFG 2000</div>
-    <div class="new-price">12500 Р.</div>
+    <div class="new-price new-price-only">12500 Р.</div>
     <div class="actions">
       <a class="buy" href="#">Купить</a>
       <a class="bookmark" href="#">В закладки</a>
@@ -209,7 +269,7 @@
   <li class="card">
     <div class="image"><img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></div>
     <div class="card-title">Перфоратор BOSCH BFG 2000</div>
-    <div class="new-price">12500 Р.</div>
+    <div class="new-price new-price-only">12500 Р.</div>
     <div class="actions">
       <a class="buy" href="#">Купить</a>
       <a class="bookmark" href="#">В закладки</a>
@@ -239,7 +299,7 @@
   <li class="card">
     <div class="image"><img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></div>
     <div class="card-title">Перфоратор BOSCH BFG 2000</div>
-    <div class="new-price">12500 Р.</div>
+    <div class="new-price new-price-only">12500 Р.</div>
     <div class="actions">
       <a class="buy" href="#">Купить</a>
       <a class="bookmark" href="#">В закладки</a>
@@ -321,10 +381,15 @@
       </div>
   </section>
 </footer>
-<div class="visually-hidden added-to-cart">
-  <h3>Товар добавлен в корзину!</h3>
-  <a href="#">Оформить заказ</a>
-  <a href="#">Продолжить покупки</a>
+<div class="modal modal-cart">
+  <div class="modal-line"></div>
+  <h3 class="modal-title">Товар добавлен в корзину!</h3>
+  <div class="cart-container">
+    <a class="modal-link modal-link-order" href="#">Оформить заказ</a>
+    <a class="modal-link modal-link-continue" href="#">Продолжить покупки</a>
+  </div>
+  <button class="modal-close" type="button">
+  <span class="visually-hidden">Закрыть</span></button>
 </div>
   </body>
 </html>
